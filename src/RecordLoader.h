@@ -17,7 +17,6 @@
 #include <string>
 #include <vector>
 #include "Records.h"
-using namespace std;
 
 class RecordLoader{
   public:

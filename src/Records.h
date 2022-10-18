@@ -1,6 +1,7 @@
 #ifndef RECORDS_H
 #define RECORDS_H
 
+#include <iostream>
 #include <stdlib.h>
 #include <vector>
 using namespace std;
@@ -52,8 +53,8 @@ class RecordSet {
     Record*& operator[] (long idx) {
         if (idx >= 0 && idx < num_recs)
             return recs[idx];
-        cout << "Array index in RecordSet out of bound."<<endl; 
-        exit(0); 
+        std::cerr << "Array index in RecordSet out of bound."<<endl; 
+        exit(1); 
     }
 
     long size() {
